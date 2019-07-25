@@ -5,6 +5,15 @@ class App extends React.Component{
 	state = {
     peopleInSpace: []
   }
+
+
+  render() {
+    return (
+      <div>
+        {this.state.peopleInSpace.map(person => person.name)}
+      </div>
+    )
+  }
  
 
 	componentDidMount() {
